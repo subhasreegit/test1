@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>The test css Assignment</title>
+	<link rel="Stylesheet" type="text/css" href="1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="menueBar1">
+				<ul>
+					<li><a href="#"><b>Home</b></a></li>
+					<li><a href="#"><b>Services</b></a></li>
+					<li><a href="#"><b>Contact</b></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="starting">
+		<div class="container">
+			<div class="image1">
+				<img src="img-1.jpg" id="pic1" name="pic1" alt="pic1">
+				<h1>HELLO WORLD!</h1>
+				<h4>lorem impulse dolor sit amet,consecteture adipising
+				befgk dkjknyyy yyyrr eeeeooooo #########.</h4>
+				<div class="vl">
+				</div>
+				<button class="b1">Click Me!</button>
+			<div>						
+		</div>
+	</div>
+
+
+	<div class="mid">
+		<div class="container">
+			<div class="mid2">
+				<div class="tab">
+  					<div clas="shade">
+  						<button class="tablinks1" onclick="openCity(event, 'HTML')">HTML</button>
+  						<button class="tablinks2" onclick="openCity(event, 'CSS')">CSS</button>
+  						<button class="tablinks3" onclick="openCity(event, 'JS')">JS</button>
+  					</div>
+				</div>
+				<div id="HTML" class="tabcontent">
+  					<h3>HTML</h3>
+  					<p>XXXXXXXXXXXX XXXXXXXX XXXXXXX XXXXXXXXX.</p>
+				</div>
+				<div id="CSS" class="tabcontent">
+  					<h3>CSS</h3>
+  					<p>XXXXXXXX XXXXXXXXXX XXXXXXXXX XXXXXXXXXX</p> 
+				</div>
+				<div id="JS" class="tabcontent">
+  					<h3>JS</h3>
+  					<p>XXXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXX</p>
+				</div>
+
+				<script>
+					function openCity(evt, cityName) {
+  						var i, tabcontent, tablinks;
+	  					tabcontent = document.getElementsByClassName("tabcontent");
+	  					for (i = 0; i < tabcontent.length; i++) {
+	    					tabcontent[i].style.display = "none";
+	  					}
+	  					tablinks = document.getElementsByClassName("tablinks1");
+	  					for (i = 0; i < tablinks.length; i++) {
+	    					tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  					}
+	  					tablinks = document.getElementsByClassName("tablinks2");
+	  					for (i = 0; i < tablinks.length; i++) {
+	    					tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  					}
+	  					tablinks = document.getElementsByClassName("tablinks3");
+	  					for (i = 0; i < tablinks.length; i++) {
+	    					tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  					}
+	  					document.getElementById(cityName).style.display = "block";
+	  					evt.currentTarget.className += " active";
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ending">
+		<div class="img3">
+			<div class="container">
+				<div class="image2">
+					<img src="img-1.jpg" id="pic2" name="pic2" alt="pic2">
+					<h1>HELLO WORLD!</h1>
+					<h4>lorem impulse dolor sit amet,consecteture adipising
+					elit.</h4>
+					<hr>
+					<button onclick="topFunction()" id="myBtn" title="Go to top"><b>Back to Top</b></button>
+					<script>
+
+						var mybutton = document.getElementById("myBtn");
+						window.onscroll = function() {scrollFunction()};
+						function scrollFunction() {
+  							if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    							mybutton.style.display = "block";
+  							} else {
+    								mybutton.style.display = "none";
+  							}
+						}
+						function topFunction() {
+  							document.body.scrollTop = 0;
+  							document.documentElement.scrollTop = 0;
+						}
+					</script>
+				</div>
+			</div>						
+		</div>
+	</div>
+
+
+</body>
